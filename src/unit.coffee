@@ -8,7 +8,7 @@ module.exports = class Unit
     @baseln = log @si.base
     @limit = Object.keys(@si).sort(sub).shift()
 
-  format: (value, separator = '') ->
+  format: (value, separator = '', places = null) ->
     @convert(value).join separator
 
   suffix: (value) ->

@@ -8,7 +8,7 @@ class Scale
     minor: false
     shift: null
     above: 1: 'da', 2: 'h', 3: 'k', 6: 'M', 9: 'G', 12: 'T', 15: 'P', 18: 'E', 21: 'Z', 24: 'Y'
-    below: 1: 'd', 2: 'c', 3: 'm', 6: 'mc', 9: 'n', 12: 'p', 15: 'f', 18: 'a', 21: 'z', 24: 'y'
+    below: 1: 'd', 2: 'c', 3: 'm', 6: 'µ', 9: 'n', 12: 'p', 15: 'f', 18: 'a', 21: 'z', 24: 'y'
 
   constructor: (opts) ->
     (opts ?= {}).__proto__ = defaults

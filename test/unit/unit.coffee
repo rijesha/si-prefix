@@ -26,7 +26,7 @@ describe 'unit class', ->
     unit = null
 
     before ->
-      dec = 3: 'G', 2: 'M', 1: 'k', 0: '', '-1': 'm', '-2': 'mc', '-3': 'n'
+      dec = 3: 'G', 2: 'M', 1: 'k', 0: '', '-1': 'm', '-2': 'µ', '-3': 'n'
       Object.defineProperty dec, 'base', value: 1000
       unit = new Unit dec, '_'
 
@@ -72,7 +72,7 @@ describe 'unit class', ->
 
     it 'should work with negative exponents', ->
       unit.convert(1e-3).should.eql [ 1, 'm_' ]
-      unit.convert(1e-6).should.eql [ 1, 'mc_' ]
+      unit.convert(1e-6).should.eql [ 1, 'µ_' ]
       unit.convert(1e-9).should.eql [ 1, 'n_' ]
 
   describe 'when using binary scale', ->
